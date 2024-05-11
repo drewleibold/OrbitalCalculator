@@ -6,6 +6,7 @@ lib := lib
 
 all: main.o
 	g++ main.o -o $(bin)/App
+	bin/App
 main.o: $(src)/main.cpp
 	g++ -c $(src)/main.cpp
 clean:
